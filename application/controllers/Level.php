@@ -15,7 +15,7 @@ class Level extends CI_Controller{
 
     public function index()
     {
-        $this->template->load('template','user/tbl_level_list');
+        $this->template->load('template','level/tbl_level_list');
     } 
     
     public function json() {
@@ -46,9 +46,8 @@ class Level extends CI_Controller{
 	    'id_user_level'      => set_value('id_user_level'),
 	    'nama_level'     => set_value('nama_level'),
 	);
-        $this->template->load('template','user/tbl_level_form', $data);
+        $this->template->load('template','level/tbl_level_form', $data);
     }
-    
     
     public function create_action() 
     {
